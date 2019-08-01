@@ -17,3 +17,7 @@ with temp as (
     from world.city where Name like '%n%'
 )
 select max(rownum) from temp;
+
+// nếu không nhập thì lấy all
+SELECT * FROM customersystem.mstcustomer
+  WHERE SEX = CASE ? WHEN '' THEN SEX ELSE ? END;
