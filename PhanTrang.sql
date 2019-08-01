@@ -21,3 +21,7 @@ select max(rownum) from temp;
 // nếu không nhập thì lấy all
 SELECT * FROM customersystem.mstcustomer
   WHERE SEX = CASE ? WHEN '' THEN SEX ELSE ? END;
+
+// sài if trong sql
+SELECT * FROM customersystem.mstcustomer
+  WHERE if('' = '',SEX='1',SEX='0');
