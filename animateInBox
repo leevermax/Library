@@ -41,3 +41,13 @@ $("#go").click(function (){
         scrollTop: $(".box3").offset().top
     }, 2000);
 });
+
+
+/*CLICK TO SHOW OR HIDDEN */
+$(".box").click(function(){
+	if($(".box1").is(":visible")){
+		$(".box1").hide();
+	} else if($(".box1").is(":hidden")){
+		$(".box1").show();
+	}
+});
