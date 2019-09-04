@@ -1,0 +1,35 @@
+// Jquery:
+
+$(".box").mouseenter(function(){
+	$(".chilTitle").animate({bottom: '0px'});
+});
+$(".box").mouseleave(function(){
+	$(".chilTitle").animate({bottom: '-50px'});
+});
+
+//css:
+.box{
+	width: 250px;
+	height: 300px;
+	margin: 50px auto;
+	background-color: yellow;
+	position: relative;
+	border:2px;
+	overflow: hidden;
+}
+.chilTitle{
+	height: 50px;
+	width: 100%;
+	background-color: blue;
+	position: absolute;
+	bottom: -50px;
+}
+
+// html:
+<div class="box">
+  <div class="chilTitle">
+    <span>
+      jfkfdjsdiee
+    </span>
+  </div>
+</div>
