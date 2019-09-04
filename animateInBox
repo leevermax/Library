@@ -33,3 +33,11 @@ $(".box").mouseleave(function(){
     </span>
   </div>
 </div>
+
+
+/*JQUERY SCROLL TO...*/
+$("#go").click(function (){
+    $('html, body').animate({
+        scrollTop: $(".box3").offset().top
+    }, 2000);
+});
