@@ -37,12 +37,15 @@ window.addEventListener( "keydown",
 
 });
 /*in Diem*/
- reset : function(){
-        
-      var para = document.createElement("h3");                       // Create a <p> node
-      var t = document.createTextNode("Hight Core: "+this.value);  
-      para.appendChild(t);
-      document.getElementById("coreTable").prepend (para);
+reset : function(){
+    if(this.value > heightCore){
+        var para = document.createElement("h5");                       // Create a <p> node
+        var t = document.createTextNode("Gamer: "+this.value);  
+        para.appendChild(t);
+        document.getElementById("coreTable").prepend (para);
+        heightCore = this.value;
+    }
 
-      this.value = 0;
-  }
+
+    this.value = 0;
+}
