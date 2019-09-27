@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Original Flappy Bird -JavaScript</title>
+    <link href="https://fonts.googleapis.com/css?family=Teko:700" rel="stylesheet">
+    <style>        
+        canvas{
+            border: 1px solid #000;
+            display: block;
+            margin: 0 auto;
+        }
+        .wapContGame{
+            width: 330px;
+            margin: auto;
+            overflow: auto;
+            position: relative;
+        }
+        .wrapHeightCore{
+            width: 90px;
+            overflow: auto;
+            position: absolute;
+            top: 0.5px;
+            right: 0px;
+        }
+        .coreTable{
+            color: red;
+        }
+        h5 {
+            display: block;
+            font-size: 0.93em;
+            margin-block-start: 0.1em!important;
+            margin-block-end: 0.1em!important;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="wapContGame">
+        <canvas id="bird" width="320" height="480"></canvas>
+        <div class="wrapHeightCore">
+            <h5>Điểm Cao:</h5>
+            <div class="coreTable" id="coreTable" style="max-height: 95px; overflow: hidden;"></div>
+        </div>
+        
+    </div>
+    
+
+    <script src="game.js"></script>
+</body>
+</html>
