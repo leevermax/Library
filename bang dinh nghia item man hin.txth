@@ -1,0 +1,28 @@
+No			Tên Item											ID									Loại						Maxlenght							Bắt buộc						Trị Init							Ghi chú															
+1			User Name											lblUserName									Label						-							-						-							Là tên của user đang đăng nhập vào hệ thống (get từ USERNAME của MSTUSER)															
+2			Log Out											llblLogout									Link Label						-							-						-							"Hiển thị dạng link
+Khi tiến hành click vào link này thì thực hiện logout"															
+3			Thông tin điều kiện search																																																													
+3.1			     Customer Name											txtCustomerName									Textbox						50							-						-																						
+3.2			     Combobox Sex											cboSex									ComboBox						-							-						-							"Có 3 dòng data:
+      - Dòng thứ 1: blank　
+      - Dòng thứ 2: Male
+      - Dòng thứ 3: Female"															
+3.3			     Birthday From											txtBirthdayForm									Textbox						10							-						-																						
+3.4			     Birthday To											txtBirthdayTo									Textbox						10							-						-																						
+3.5			     Search											btnSearch									Button						-							-						-																						
+4			First											btnFirst									Button						-							-						-																						
+5			Previous											btnPrevious									Button						-							-						-																						
+6			Next											btnNext									Button						-							-						-																						
+7			Last											btnLast									Button						-							-						-																						
+8			Danh sách kết quả search																																																													
+8.1			     Check Box											chkAll									CheckBox						-							-						-							"Khi check box ở trạng thái ON thì toàn bộ chkDetail là ON.
+Khi checkbox ở trạng thái OFF thì toàn bộ chkDetail là OFF "															
+8.2			     Check Box Detail											chkDetail									CheckBox						-							-						-																						
+8.3			     Customer ID											llblCustomerID									Link Label						-							-						-							"Hiển thị dạng link
+Khi tiến hành click vào link này thì di chuyển sang màn hình Edit"															
+8.4			     Customer Name											lblCustomerName									Label						-							-						-																						
+8.5			     Sex											lblSex									Label						-							-						-																						
+8.6			     Birthday											lblBirthday									Label						-							-						-																						
+8.7			     Address											lblAddress									Label						-							-						-																						
+9			Add new											btnAddnew									Button						-							-						-																						
