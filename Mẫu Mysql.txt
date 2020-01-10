@@ -6,12 +6,12 @@ CREATE TABLE `ten table` (
 	`level` int(10) NOT NULL,
 	`exp` int(20) NOT NULL,
 	`thuoc_tinh` int(10) NOT NULL,
-	`chuc_nghiep` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT "Kh鬾g",
-	`cong_phap` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT "Kh鬾g",
-	`quoc_gia` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT "Kh鬾g",
-	`tong_mon` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT "Kh鬾g",
-	`gia_toc` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT "Kh鬾g",
-	`danh_hieu` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT "Kh鬾g",
+	`chuc_nghiep` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT "Kh么ng",
+	`cong_phap` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT "Kh么ng",
+	`quoc_gia` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT "Kh么ng",
+	`tong_mon` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT "Kh么ng",
+	`gia_toc` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT "Kh么ng",
+	`danh_hieu` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT "Kh么ng",
 	`luc_luong` int(20) NOT NULL,
 	`the_chat` int(20) NOT NULL,
 	`nhanh_nhen` int(20) NOT NULL,
@@ -31,3 +31,17 @@ CREATE TABLE `ten table` (
 	UNIQUE INDEX `username` (`username`)
 )
 ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+use customersystem;
+
+CREATE TABLE MSTUSER(
+  PSN_CD int(4) NOT NULL PRIMARY KEY auto_increment,
+  USERID VARCHAR(8),
+  PASSWORD VARCHAR(8),
+  USERNAME VARCHAR(40),
+  DELETE_YMD TIMESTAMP DEFAULT NULL,
+  INSERT_YMD TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  INSERT_PSN_CD int(5) DEFAULT 0,
+  UPDATE_YMD TIMESTAMP DEFAULT NULL,
+  UPDATE_PSN_CD int(5) DEFAULT 0
+);
